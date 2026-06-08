@@ -1,0 +1,121 @@
+-- this is an example
+group: week04
+
+Airports = {
+code, city, state
+'DEL', 'Delhi', 'Delhi'
+'BOM', 'Mumbai', 'Maharashtra'
+'BLR', 'Bengaluru', 'Karnataka'
+'HYD', 'Hyderabad', 'Telangana'
+'CCU', 'Kolkata', 'West Bengal'
+'MAA', 'Chennai', 'Tamil Nadu'
+'AMD', 'Ahmedabad', 'Gujarat'
+'GOI', 'Goa', 'Goa'
+'COK', 'Kochi', 'Kerala'
+'PNQ', 'Pune', 'Maharashtra'
+'GAU', 'Guwahati', 'Assam'
+'PAT', 'Patna', 'Bihar'
+'LKO', 'Lucknow', 'Uttar Pradesh'
+'JAI', 'Jaipur', 'Rajasthan'
+'BBI', 'Bhubaneswar', 'Odisha'
+'VTZ', 'Visakhapatnam', 'Andhra Pradesh'
+'TRV', 'Thiruvananthapuram', 'Kerala'
+'IXC', 'Chandigarh', 'Chandigarh'
+'ATQ', 'Amritsar', 'Punjab'
+'SXR', 'Srinagar', 'Jammu and Kashmir'
+}
+
+Routes = {
+origin, dest, distance_km
+'DEL', 'BOM', 1140.5
+'BOM', 'BLR', 850.2
+'BLR', 'HYD', 500.0
+'HYD', 'CCU', 1200.8
+'CCU', 'MAA', 1360.1
+'MAA', 'AMD', 1370.3
+'AMD', 'GOI', 520.4
+'GOI', 'COK', 650.7
+'COK', 'PNQ', 800.9
+'PNQ', 'GAU', 2000.6
+'GAU', 'PAT', 800.2
+'PAT', 'LKO', 450.1
+'LKO', 'JAI', 500.3
+'JAI', 'BBI', 1300.4
+'BBI', 'VTZ', 400.5
+'VTZ', 'TRV', 1200.7
+'TRV', 'IXC', 2200.8
+'IXC', 'ATQ', 250.9
+'ATQ', 'SXR', 300.2
+'SXR', 'DEL', 650.4
+}
+
+Flights = {
+flight_id, origin, dest, sched_year, sched_month, sched_day, sched_hour, sched_min, act_year, act_month, act_day, act_hour, act_min
+1,  'DEL', 'BOM', 2023, 5, 1, 14, 30, 2023, 5, 1, 14, 45
+2,  'BOM', 'BLR', 2023, 5, 2, 15, 0, 2023, 5, 2, 15, 20
+3,  'BLR', 'HYD', 2023, 5, 3, 16, 15, 2023, 5, 3, 16, 30
+4,  'HYD', 'CCU', 2023, 5, 4, 17, 45, 2023, 5, 4, 18, 5
+5,  'CCU', 'MAA', 2023, 5, 5, 18, 30, 2023, 5, 5, 18, 50
+6,  'MAA', 'AMD', 2023, 5, 6, 19, 0, 2023, 5, 6, 19, 15
+7,  'AMD', 'GOI', 2023, 5, 7, 20, 15, 2023, 5, 7, 20, 35
+8,  'GOI', 'COK', 2023, 5, 8, 21, 45, 2023, 5, 8, 22, 0
+9,  'COK', 'PNQ', 2023, 5, 9, 22, 30, 2023, 5, 9, 22, 50
+10, 'PNQ', 'GAU', 2023, 5, 10, 23, 0, 2023, 5, 10, 23, 20
+11, 'GAU', 'PAT', 2023, 5, 11, 8, 15, 2023, 5, 11, 8, 30
+12, 'PAT', 'LKO', 2023, 5, 12, 9, 45, 2023, 5, 12, 10, 5
+13, 'LKO', 'JAI', 2023, 5, 13, 10, 30, 2023, 5, 13, 10, 45
+14, 'JAI', 'BBI', 2023, 5, 14, 11, 0, 2023, 5, 14, 11, 20
+15, 'BBI', 'VTZ', 2023, 5, 15, 12, 15, 2023, 5, 15, 12, 35
+16, 'VTZ', 'TRV', 2023, 5, 16, 13, 45, 2023, 5, 16, 14, 0
+17, 'TRV', 'IXC', 2023, 5, 17, 14, 30, 2023, 5, 17, 14, 50
+18, 'IXC', 'ATQ', 2023, 5, 18, 15, 0, 2023, 5, 18, 15, 15
+19, 'ATQ', 'SXR', 2023, 5, 19, 16, 15, 2023, 5, 19, 16, 35
+20, 'SXR', 'DEL', 2023, 5, 20, 17, 45, 2023, 5, 20, 18, 5			 
+}
+
+ATMs = {
+bank, lat, lon, atm_id
+'SBI', 28.6139, 77.2090, 'SBI-ATM-001'
+'HDFC', 19.0760, 72.8777, 'HDFC-ATM-002'
+'ICICI', 12.9716, 77.5946, 'ICICI-ATM-003'
+'AXIS', 17.3850, 78.4867, 'AXIS-ATM-004'
+'SBI', 22.5726, 88.3639, 'SBI-ATM-005'
+'HDFC', 13.0827, 80.2707, 'HDFC-ATM-006'
+'ICICI', 23.0225, 72.5714, 'ICICI-ATM-007'
+'AXIS', 15.2993, 74.1240, 'AXIS-ATM-008'
+'SBI', 9.9252, 76.2673, 'SBI-ATM-009'
+'HDFC', 18.5204, 73.8567, 'HDFC-ATM-010'
+'ICICI', 26.1445, 91.7362, 'ICICI-ATM-011'
+'AXIS', 25.5941, 85.1376, 'AXIS-ATM-012'
+'SBI', 26.8467, 80.9462, 'SBI-ATM-013'
+'HDFC', 26.9124, 75.7873, 'HDFC-ATM-014'
+'ICICI', 20.2961, 85.8245, 'ICICI-ATM-015'
+'AXIS', 17.6868, 83.2185, 'AXIS-ATM-016'
+'SBI', 8.5241, 76.9366, 'SBI-ATM-017'
+'HDFC', 30.7333, 76.7794, 'HDFC-ATM-018'
+'ICICI', 31.6340, 74.8723, 'ICICI-ATM-019'
+'AXIS', 34.0836, 74.7973, 'AXIS-ATM-020'
+}
+Users = {
+user_id, bank, lat, lon
+'USER-001', 'SBI', 28.6140, 77.2091
+'USER-002', 'HDFC', 19.0761, 72.8778
+'USER-003', 'ICICI', 12.9717, 77.5947
+'USER-004', 'AXIS', 17.3851, 78.4868
+'USER-005', 'SBI', 22.5727, 88.3640
+'USER-006', 'HDFC', 13.0828, 80.2708
+'USER-007', 'ICICI', 23.0226, 72.5715
+'USER-008', 'AXIS', 15.2994, 74.1241
+'USER-009', 'SBI', 9.9253, 76.2674
+'USER-010', 'HDFC', 18.5205, 73.8568
+'USER-011', 'ICICI', 26.1446, 91.7363
+'USER-012', 'AXIS', 25.5942, 85.1377
+'USER-013', 'SBI', 26.8468, 80.9463
+'USER-014', 'HDFC', 26.9125, 75.7874
+'USER-015', 'ICICI', 20.2962, 85.8246
+'USER-016', 'AXIS', 17.6869, 83.2186
+'USER-017', 'SBI', 8.5242, 76.9367
+'USER-018', 'HDFC', 30.7334, 76.7795
+'USER-019', 'ICICI', 31.6341, 74.8724
+'USER-020', 'AXIS', 34.0837, 74.7974
+}
